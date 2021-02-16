@@ -1,5 +1,4 @@
 package main
-
 import "net"
 import "fmt"
 import "bufio"
@@ -16,7 +15,7 @@ func main() {
     // Отправляем в socket
     fmt.Fprintf(conn, text + "\n")
     // Прослушиваем ответ
-    message, _ := bufio.NewReader(conn).ReadString('\n')
-    fmt.Print("Message from server: "+message)
+    // message, _ := bufio.NewReader(conn).ReadString('\n')
+    // fmt.Print("Message from server: "+message)
   }
 }
